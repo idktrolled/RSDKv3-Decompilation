@@ -349,7 +349,7 @@ void InitUserdata()
         ini.SetBool("Dev", "UseSteamDir", Engine.useSteamDir = false);
 #endif
         ini.SetBool("Dev", "UseHQModes", Engine.useHQModes = true);
-        sprintf(Engine.dataFile, "%s", "Data.rsdk");
+        sprintf(Engine.dataFile, "%s", "SonicCDu.rsdk");
         ini.SetString("Dev", "DataFile", Engine.dataFile);
 
         Engine.startList_Game  = Engine.startList;
@@ -465,7 +465,7 @@ void InitUserdata()
         Engine.startStage_Game = Engine.startStage;
 
         if (!ini.GetString("Dev", "DataFile", Engine.dataFile))
-            StrCopy(Engine.dataFile, "Data.rsdk");
+            StrCopy(Engine.dataFile, "SonicCDu.rsdk");
 
         if (!ini.GetInteger("Game", "Language", &Engine.language))
             Engine.language = RETRO_EN;
